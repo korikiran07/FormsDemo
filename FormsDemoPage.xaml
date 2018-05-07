@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:local="clr-namespace:FormsDemo" 
+    x:Class="FormsDemo.FormsDemoPage">
+	<!--<Label Text="Welcome to Xamarin Forms!" 
+        VerticalOptions="Center" 
+        HorizontalOptions="Center" />-->
+    <ContentPage.Content>
+        <Grid BackgroundColor="White">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="80"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="0,50,0,0" >
+                <Label Text="LOGIN" TextColor="Black" FontSize="25"/>
+            </StackLayout>
+            <Grid Grid.Row="1" Margin="20,0,20,0" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Image 
+                    Source="india.jpg" 
+                    VerticalOptions="EndAndExpand"/>
+                <Entry 
+                    x:Name="username"
+                    Grid.Row="1" 
+                    Placeholder="Username" 
+                    Keyboard="Email"
+                    WidthRequest="300"
+                    HeightRequest="60"
+                    TextColor="Black" 
+                    PlaceholderColor="Gray"
+                    VerticalOptions="Center" 
+                    FontSize="16"
+                    HorizontalOptions="Center"/>
+                <Entry 
+                    x:Name="password"
+                    Grid.Row="2" 
+                    Placeholder="Password"
+                    Keyboard="Numeric"
+                    IsPassword="true"
+                    WidthRequest="300"
+                    HeightRequest="60"
+                    TextColor="Black" 
+                    PlaceholderColor="Gray"
+                    VerticalOptions="Center" 
+                    FontSize="16"
+                    HorizontalOptions="Center"/>
+               <Button 
+                    x:Name="login"
+                    Grid.Row="3"
+                    Text="Log In"
+                    FontSize="18"
+                    VerticalOptions="Start"
+                    BackgroundColor="#3897F0" 
+                    TextColor="White" 
+                    WidthRequest="200"
+                    HeightRequest="60"/>
+            </Grid>
+            <StackLayout Grid.Row="2">
+                <Label 
+                    HeightRequest="1" 
+                    BackgroundColor="Gray"/>
+                <Label 
+                    x:Name="signup"
+                    Text="Don't have an account ? Sign Up."
+                    TextColor="Black"
+                    FontSize="16"
+                    VerticalOptions="FillAndExpand"
+                    VerticalTextAlignment="Center"
+                    HorizontalTextAlignment="Center"/>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+    
+</ContentPage>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "900387418450",
+    "firebase_url": "https://formsdemo-36909.firebaseio.com",
+    "project_id": "formsdemo-36909",
+    "storage_bucket": "formsdemo-36909.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:900387418450:android:b4ac35e7ef838f2a",
+        "android_client_info": {
+          "package_name": "com.itwinetech.formsdemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "900387418450-n779bsj3fkv7anqntblrlt9k9cr1ut6m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDg6njTf6zuC16KARR0B9QId8jBmX6eGgU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
